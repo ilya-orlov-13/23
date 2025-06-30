@@ -15,7 +15,7 @@
 
 using namespace std;
 
-// Структура узла дерева
+// РЎС‚СЂСѓРєС‚СѓСЂР° СѓР·Р»Р° РґРµСЂРµРІР°
 class Node {
 public:
     int Data;
@@ -26,22 +26,22 @@ public:
     Node(int data) : Data(data), Left(nullptr), Right(nullptr) {}
 };
 
-// Псевдоним для указателя на узел
+// РџСЃРµРІРґРѕРЅРёРј РґР»СЏ СѓРєР°Р·Р°С‚РµР»СЏ РЅР° СѓР·РµР»
 typedef Node* PNode;
 
-// Функции для работы с деревом
+// Р¤СѓРЅРєС†РёРё РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РґРµСЂРµРІРѕРј
 void AddToBST(PNode& Root, int Val);
 void PrintTree(PNode Root, int Level); 
 void PrintTreeStyledWrapper(PNode Root);
 void DeleteTree(PNode Node);
 void BuildBST(PNode& Root, int Mode);
 
-// Состояния для жадного алгоритма
+// РЎРѕСЃС‚РѕСЏРЅРёСЏ РґР»СЏ Р¶Р°РґРЅРѕРіРѕ Р°Р»РіРѕСЂРёС‚РјР°
 const int STATE_NODE_NOT_COVERED = 0;
 const int STATE_NODE_HAS_CAMERA = 1;
 const int STATE_NODE_COVERED_NO_CAMERA = 2;
 
-// Функция для подсчета минимального количества камер
+// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РїРѕРґСЃС‡РµС‚Р° РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° РєР°РјРµСЂ
 int MinCamerasGreedy(PNode Root);
 
 #endif // HEADER_H
