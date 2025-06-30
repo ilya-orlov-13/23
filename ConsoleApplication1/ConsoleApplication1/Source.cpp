@@ -1,4 +1,4 @@
-﻿#include "Header.h"
+#include "Header.h"
 
 // Добавление в дерево поиска
 void AddToBST(PNode& Root, int Val) {
