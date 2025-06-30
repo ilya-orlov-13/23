@@ -9,7 +9,7 @@ int main() {
     PNode Tree = nullptr;
 
     int Mode;
-	cout << "1-çàïîëíèòü ñ êëàâèàòóðû, 2-ñëó÷àéíî, 3-èç ôàéëà: ";
+	cout << "1-Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹, 2-ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾, 3-Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð°: ";
 	cin >> Mode;
 	BuildBST(Tree, Mode);
 
@@ -17,7 +17,7 @@ int main() {
     PrintTreeStyledWrapper(Tree);
     cout << endl << endl;
     PrintTree(Tree, 0);
-    cout << "Ìíìàëüíîå êîëè÷åñòâî êàìåð: " << camerasNeeded << endl;
+    cout << "ÐœÐ½Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ°Ð¼ÐµÑ€: " << camerasNeeded << endl;
 
     DeleteTree(Tree);
 
